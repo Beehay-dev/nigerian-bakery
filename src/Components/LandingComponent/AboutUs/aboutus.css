@@ -1,0 +1,142 @@
+.about-container {
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+}
+
+.opening-text {
+  text-align: center;
+  margin: 3rem 1rem;
+}
+
+.opening-text h1 {
+  font-size: 3rem;
+  color: #ff8a8a;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.opening-text h2 {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.sep-img {
+  margin: 1.6rem;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-style: italic;
+  color: #777;
+  line-height: 1.8;
+  padding: 0 1rem;
+}
+
+.quote {
+  color: #ff8a8a;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.client-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.client-info p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.client-info span {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.dots {
+  margin-top: 30px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #f4b860;
+}
+
+/* ── Tablet (max 768px) ── */
+@media (max-width: 768px) {
+  .opening-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .opening-text h2 {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  .opening-text {
+    margin: 2rem 0.5rem;
+  }
+
+  .opening-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .opening-text h2 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .sep-img {
+    margin: 1rem;
+    width: 120px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 0 0.5rem;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .client-info img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .client-info p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .dots span {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
+}

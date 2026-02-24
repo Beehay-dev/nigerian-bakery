@@ -1,0 +1,267 @@
+.order-hero {
+  position: relative;
+  height: 110vh;
+  background: url('../../../assets/cupcake.jpg') center/cover no-repeat;
+  margin: 8rem 0rem 4rem 0rem;
+}
+
+/* Overlay */
+.order-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.order-container {
+  position: relative;
+  padding-top: 8rem;
+  z-index: 2;
+}
+
+.order {
+  text-align: center;
+}
+
+.order-txt {
+  font-size: 3rem;
+  font-family: 'Brush Script MT', cursive;
+  color: #f98c91;
+}
+
+.order-description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.separator-image {
+  margin-top: 1.3rem;
+}
+
+.text {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 800px;
+  padding-top: 1rem;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 0 5px #f98c91,
+    0 0 10px #f98c91,
+    0 0 20px #ff5c8a,
+    0 0 25px #ff2d68;
+}
+
+.order-form {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 4rem;
+  margin: auto;
+}
+
+/* Form inputs styling */
+.order-form input,
+.order-form select,
+.order-form textarea {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.order-form select {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.order-form select option {
+  background: #333;
+  color: #fff;
+}
+
+.order-form textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+  flex-wrap: wrap;
+}
+
+.order-btn,
+.delivery-btn {
+  padding: 1rem 2.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.order-btn {
+  background: #f98c91;
+  color: #fff;
+}
+
+.order-btn:hover {
+  background: transparent;
+  border: 2px solid #f98c91;
+  color: #f98c91;
+  transition: all 0.7s ease;
+}
+
+.delivery-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #f98c91;
+}
+
+.delivery-btn:hover {
+  background: #f98c91;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Bottom text */
+.bottom-text {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom-text p {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bottom-text span {
+  color: #f98c91;
+  font-weight: bold;
+}
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .order-form {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem;
+  }
+
+  .order-form textarea {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Small Tablet (max 768px) ── */
+@media (max-width: 768px) {
+  .order-hero {
+    height: auto;
+    min-height: 100vh;
+    margin: 4rem 0 2rem 0;
+  }
+
+  .order-container {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .order-txt {
+    font-size: 2.2rem;
+  }
+
+  .order-description {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 0.85rem;
+    padding: 1rem 1.5rem 0;
+  }
+
+  .order-form {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .order-form textarea {
+    grid-column: 1 / -1;
+  }
+
+  .bottom-text p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  .order-container {
+    padding-top: 3rem;
+  }
+
+  .order-txt {
+    font-size: 1.8rem;
+  }
+
+  .order-description {
+    font-size: 1rem;
+  }
+
+  .order-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .order-btn,
+  .delivery-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom-text p {
+    font-size: 0.75rem;
+  }
+}

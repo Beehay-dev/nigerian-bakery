@@ -1,0 +1,184 @@
+.center-container {
+  text-align: center;
+  margin-top: 12rem;
+  padding: 0 1rem;
+}
+
+.welcome-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.9rem;
+  color: #f98c91;
+  margin-bottom: 1rem;
+}
+
+.welcome-brief {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.separator-png {
+  margin-top: 2rem;
+  width: 150px;
+  height: auto;
+}
+
+.description-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-family: 'Recursive', sans-serif;
+  font-size: 1rem;
+  color: #6c6b6b;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cake-png {
+  width: 47rem;
+  margin-right: -1rem;
+  padding-top: 2rem;
+}
+
+.combo {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin: 0rem 7rem 0rem 1rem;
+}
+
+.combo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 1.9rem;
+}
+
+.combo-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.cakecard {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.combo-text h2 {
+  padding-right: 17rem;
+  font-size: 1.5rem;
+}
+
+.combo-text p {
+  max-width: 380px;
+  color: #6c6b6b;
+  font-family: 'Recursive', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #f98c91;
+  margin: 8px 0;
+}
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .cake-png {
+    width: 32rem;
+  }
+
+  .combo {
+    gap: 2rem;
+    margin: 0 2rem;
+  }
+
+  .combo-text h2 {
+    padding-right: 5rem;
+  }
+}
+
+/* ── Small Tablet (max 768px) ── */
+@media (max-width: 768px) {
+  .center-container {
+    margin-top: 6rem;
+  }
+
+  .welcome-title {
+    font-size: 2.2rem;
+  }
+
+  /* Stack image above the combo items */
+  .combo {
+    flex-direction: column;
+    margin: 2rem 1rem 0 1rem;
+    gap: 1rem;
+  }
+
+  .cake-png {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+    padding-top: 1rem;
+  }
+
+  .combo-content {
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  .combo-text h2 {
+    padding-right: 0;
+    font-size: 1.3rem;
+  }
+
+  .combo-text p {
+    max-width: 100%;
+  }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  .center-container {
+    margin-top: 4rem;
+  }
+
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+
+  .description-text {
+    font-size: 0.9rem;
+  }
+
+  .combo-item {
+    gap: 1rem;
+  }
+
+  .cakecard {
+    width: 55px;
+    height: 55px;
+  }
+
+  .combo-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .combo-text p {
+    font-size: 0.9rem;
+  }
+}

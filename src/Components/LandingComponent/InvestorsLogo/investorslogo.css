@@ -1,0 +1,30 @@
+.investors-logo {
+  margin-bottom: 6rem;
+  width: 100%;
+  border: 2px solid #ddd8d8ae;
+  padding: 0rem 0rem 0rem 2rem;
+  opacity: 0.9;
+}
+
+.img-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between logos */
+  margin: auto ;
+  scrollbar-width: auto;
+  width: 50%; 
+}
+
+.img-carousel img {
+  height: 12rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.img-carousel img:hover {
+  opacity: 1;
+}
+.logo{
+    margin-top: 3rem;
+}
