@@ -7,7 +7,7 @@ import img5 from '../../../assets/img5.jpg'
 import img6 from '../../../assets/img6.jpg'
 import cakeimg from '../../../assets/cakeimg.jpg'
 import separator from '../../../assets/separator.png'
-import './Portfolio.css'
+import './portfolio.css'
 
 function Portfolio() {
   return (

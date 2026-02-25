@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from '../Header/Header'
-import './Hero.css'
+import './hero.css'
 
 const slides = [
   {
