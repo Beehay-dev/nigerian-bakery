@@ -15,7 +15,7 @@ function Landing() {
   return (
     <div className='Landing-container'>
         <div className="hero-control">
-        <Hero/>
+          <Hero/>
         </div>
         <div className="welcome-control">
           <Welcome/>

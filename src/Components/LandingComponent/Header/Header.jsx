@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import './header.css'
 import { FaPhoneAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaSkype, FaDribbble } from 'react-icons/fa'
@@ -38,24 +39,34 @@ function Header() {
       {/* Main Header Navigation */}
       <div className="main-header">
         <div className="logo">
-          <h1>Tunris Cusine</h1>
+          <h1>Movics Bakery</h1>
         </div>
 
         <nav className="navbar">
           <ul className={`nav-ul ${menuOpen ? 'nav-open' : ''}`}>
-            <li><a href="#home" className="active">HOME</a></li>
+            <li><a href="/landing" className="active">HOME</a></li>
             <li className='pages-li'>
               <a href="#pages">PAGES</a>
               <ul className='ul-lists'>
-                <li className='li-lists'><a href="">About Us</a></li>
+                <li className='li-lists'><a href="/aboutpage">About Us</a></li>
                 <li className='li-lists'><a href="">Service</a></li>
                 <li className='li-lists'><a href="">Gallery</a></li>
               </ul>
             </li>
             <li><a href="#features">FEATURES</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li className='pages-li'>
+              <a href="#blog">BLOG</a>
+              <ul className='ul-lists'>
+                <li className='li-lists'><a href="/blog">Blog Posts</a></li>
+              </ul>
+            </li>
+            <li className='pages-li'>
+              <a href="#contact">CONTACT</a>
+              <ul className='ul-lists'>
+                <li className='li-lists'><a href="">Contact 2</a></li>
+              </ul>
+            </li>
           </ul>
 
           <div

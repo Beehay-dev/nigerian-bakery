@@ -101,7 +101,7 @@
   position: relative;
 }
 
-/* Mobile-first: nav hidden by default */
+
 .nav-ul {
   list-style: none;
   display: none;
@@ -143,6 +143,7 @@
   position: relative;
 }
 .pages-li:hover > a {
+  /* margin-top: 1.1rem; */
   background-color: rgba(234, 174, 84, 0.9);
   border-radius: 3px;
 }
@@ -152,23 +153,24 @@
   top: 100%;
   left: 0;
   width: 100%;
-  height: 0.5rem;
+  height: 8px;
 }
 .ul-lists {
   position: absolute;
   top: 100%;
   left: 0;
+  margin-top: 8px;               
   background-color: rgba(234, 174, 84, 0.9);
   min-width: 160px;
   list-style: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  margin-top: 0.5rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   z-index: 200;
   border-radius: 3px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* REMOVE the transform entirely */
 }
 .ul-lists li {
   padding: 0.5rem 0;
@@ -187,15 +189,17 @@
   color: #fff;
   transition: all 0.3s ease;
 }
+
 .pages-li:hover .ul-lists {
   opacity: 1;
   visibility: visible;
 }
+
 .li-lists {
   padding: 0.3rem;
 }
 
-/* ── Hamburger ── */
+
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -241,13 +245,13 @@
   }
 
   .nav-ul > li > a {
-    padding: 0;
+    padding: 10px 14px;
   }
   .nav-ul > li > a:hover {
     padding: 10px 14px;
   }
   .navbar a.active {
-    padding: 10px 20px;
+    padding: 10px 14px;
   }
 
   /* Hide hamburger on desktop */
@@ -256,7 +260,7 @@
   }
 
   .ul-lists {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 }
 

@@ -1,0 +1,201 @@
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Barlow:wght@400;600;700&display=swap');
+
+ * { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.mot-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Barlow', sans-serif;
+}
+
+.mot-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.45) saturate(0.7);
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  inset: 0;
+  background: rgba(255, 0, 0, 0.858);
+  z-index: 1;
+}
+
+.mot-inner {
+ position: relative;
+ z-index: 2;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 140px 60px 40px 40px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ gap: 40px;
+}
+
+.mot-chef-img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+        .mot-chef-img {
+          height: 520px;
+          width: auto;
+          max-width: 100%;
+          object-fit: contain;
+          object-position: bottom;
+          /* filter: drop-shadow(0 10px 40px rgba(0,0,0,0.6)); */
+          transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .mot-content {
+          color: #fff;
+          padding-left: 20px;
+        }
+
+        .mot-title {
+          font-family: 'Great Vibes', cursive;
+          font-size: 3.2rem;
+          color: #e87b8a;
+          line-height: 1.1;
+          margin-bottom: 12px;
+        }
+
+        .mot-subtitle {
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 14px;
+        }
+
+        .mot-divider {
+          width: 50px;
+          height: 3px;
+          background: #f47c7c;
+          margin-bottom: 24px;
+        }
+
+        .mot-bio {
+          font-size: 0.95rem;
+          line-height: 1.8;
+          color: rgba(255,255,255,0.85);
+          margin-bottom: 28px;
+        }
+
+        .mot-name {
+          font-size: 0.9rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+
+        .mot-socials {
+          display: flex;
+          gap: 14px;
+          margin-bottom: 20px;
+        }
+
+        .mot-socials a {
+          color: rgba(255,255,255,0.7);
+          font-size: 1rem;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+
+        .mot-socials a:hover {
+        color: #f47c7c;
+        } 
+
+
+        .mot-contact {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .mot-contact-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.9rem;
+          color: rgba(255,255,255,0.85);
+        }
+
+        .mot-contact-icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.75rem;
+          flex-shrink: 0;
+        }
+
+        .mot-contact-icon.email { 
+          background: #4da8da; 
+        }
+
+        .mot-contact-icon.phone { 
+        background: #4da8da; 
+    }
+
+        .mot-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            width: 42px;
+            height: 42px;
+            min-height: unset;
+            padding: 0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            /* backdrop-filter: blur(4px); */
+
+        }
+
+        .mot-arrow:hover { 
+            background: rgba(255,255,255,0.3); 
+        }
+        .mot-arrow.left { 
+            left: 12px; 
+        }
+        .mot-arrow.right { 
+            right: 12px; 
+        }
+
+        @media (max-width: 768px) {
+          .mot-inner {
+            grid-template-columns: 1fr;
+            padding: 40px 20px;
+          }
+          .mot-chef-img { height: 300px; }
+          .mot-content { padding-left: 0; }
+          .mot-title { font-size: 2.4rem; }
+        }

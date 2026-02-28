@@ -1,0 +1,399 @@
+/* ===== PAGE ===== */
+.page {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+}
+
+/* ===== HERO IMAGE ===== */
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== POST HEADER ===== */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 16px 20px;
+}
+
+.date-badge {
+  display: inline-block;
+  background: #4ecdc4;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.date-day {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Arial', sans-serif;
+}
+
+.date-month {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.post-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.82rem;
+  color: #888;
+  margin-top: 6px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-pink {
+  color: #e87b8a;
+}
+
+/* ===== POST BODY ===== */
+.post-body {
+  background: #fff;
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 0 20px 20px;
+}
+
+.body-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.blockquote {
+  margin: 28px 0;
+  padding-left: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: #ddd;
+  line-height: 1;
+  font-family: Georgia, serif;
+  flex-shrink: 0;
+  margin-top: -4px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.quote-author {
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* ===== TAGS ===== */
+.tags-row {
+  padding: 16px 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.88rem;
+  color: #666;
+}
+
+.tag-label {
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tag-link {
+  color: #e87b8a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tag-separator {
+  color: #aaa;
+}
+
+/* ===== COMMENT ===== */
+.comment-box {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.comment-author-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.comment-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.comment-divider {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.comment-role {
+  color: #e87b8a;
+  font-weight: 400;
+}
+
+.comment-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-section {
+  background: #fff;
+  border: 1px solid #eee;
+  margin-bottom: 24px;
+}
+
+.sidebar-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #222;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Search */
+.search-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  outline: none;
+  font-family: inherit;
+  color: #888;
+}
+
+.search-btn {
+  background: #e87b8a;
+  border: none;
+  color: #fff;
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Categories */
+.cat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cat-count {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Tabs */
+.tabs-row {
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+.tab {
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #aaa;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  font-family: inherit;
+}
+
+.tab.active {
+  color: #e87b8a;
+  border-bottom: 2px solid #e87b8a;
+}
+
+/* Recent Posts */
+.recent-post {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.recent-title {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.recent-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.recent-date-pink {
+  color: #e87b8a;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  padding: 16px;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gallery-img:hover {
+  opacity: 0.8;
+}
+
+/* Calendar */
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+
+.calendar-title {
+  color: #e87b8a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.calendar-subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding-bottom: 8px;
+}
+
+.calendar-arrow {
+  background: none;
+  border: none;
+  color: #e87b8a;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  padding: 0 12px 12px;
+}
+
+.calendar-th {
+  text-align: center;
+  padding: 6px 4px;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.calendar-td {
+  text-align: center;
+  padding: 6px 4px;
+  color: #555;
+}
+
+.calendar-highlight {
+  background: #e87b8a;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
